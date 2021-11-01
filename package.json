@@ -30,6 +30,6 @@
     "@frida/stream": "^1.0.1",
     "@frida/string_decoder": "^2.0.0",
     "@frida/timers": "^3.0.0",
-    "@frida/util": "^1.0.2"
+    "@frida/util": "^1.0.3"
   }
 }
