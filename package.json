@@ -1,6 +1,6 @@
 {
   "name": "@frida/web-shims",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Meta-package pulling in shims needed for web apps",
   "main": "index.js",
   "types": "index.d.ts",
