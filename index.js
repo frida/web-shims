@@ -7,5 +7,6 @@ const shims = Object.entries(pkg.dependencies)
   .map(([name, _]) => name.substr(prefix.length));
 
 module.exports = function all(rootUrl) {
-  return Object.fromEntries(shims.map(name => [name, new URL(`./node_modules/@frida/${name}`, rootUrl).pathname]));
+  const offset = process.platform === 'win32' ? 1 : 0;
+  return Object.fromEntries(shims.map(name => [name, new URL(`./node_modules/@frida/${name}`, rootUrl).pathname.substring(offset)]));
 };
